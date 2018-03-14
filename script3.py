@@ -97,7 +97,7 @@ def num_task_3():
     data = np.loadtxt('lab_3_small_part_of_df.csv', skiprows=1, dtype='str', delimiter=',')
     for counter in range(len(data)):
         if (float(data[counter][5]) > 19) and (float(data[counter][5]) < 20) and (
-                    float(data[counter][7]) > float(data[counter][8])):
+                float(data[counter][7]) > float(data[counter][8])):
             answer = np.append(answer, data[counter])
     answer = np.vstack(answer)
 
@@ -123,7 +123,7 @@ def num_task_4():
     start_time_def = time.time()
     for counter in range(len(data)):
         if (float(data[counter][5]) > 19) and (float(data[counter][5]) < 20) and (
-                    float(data[counter][7]) > float(data[counter][8])):
+                float(data[counter][7]) > float(data[counter][8])):
             data_col_6 = np.append(data_col_6, float(data[counter][6]))
             data_col_7 = np.append(data_col_7, float(data[counter][7]))
             data_col_8 = np.append(data_col_8, float(data[counter][8]))
@@ -148,7 +148,7 @@ def num_task_5():
     print 'end loading'
     for counter in range(len(data)):
         if data[counter][1] > '18:00:00' and float(data[counter][7]) > float(data[counter][6]) and \
-                        float(data[counter][7]) > float(data[counter][8]):
+                float(data[counter][7]) > float(data[counter][8]):
             answer = np.append(answer, data[counter])
     answer = np.vstack(answer)
 
